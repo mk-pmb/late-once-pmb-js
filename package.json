@@ -1,0 +1,37 @@
+{ "name": "late-once-pmb",
+  "version": "1.0.0",
+  "description": "Handle an event asap after it fired, even if that was in the past. A stripped-down version of event-historian-pmb's .asSoonAs().",
+  "keywords": [
+    "event emitter",
+    "event",
+    "EventEmitter",
+    "events",
+    "once",
+    "past"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/late-once-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/late-once-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/late-once-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "asa.js",
+  "scripts": { "test": "nodejs test.usage.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {
+    "equal-pmb": "^0.1.6"
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
