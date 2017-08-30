@@ -1,5 +1,5 @@
 { "name": "late-once-pmb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handle an event asap after it fired, even if that was in the past. A stripped-down version of event-historian-pmb's .asSoonAs().",
   "keywords": [
     "event emitter",
@@ -29,7 +29,10 @@
 
   "dependencies": {},
   "devDependencies": {
-    "equal-pmb": "^0.1.6"
+    "equal-pmb": "^0.1.13",
+    "event-test-clock-pmb": "^1.0.0",
+    "subjlog1707-pmb": "^1.0.2",
+    "usnam-pmb": "^0.2.3"
   },
 
 
