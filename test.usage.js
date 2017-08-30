@@ -56,16 +56,11 @@ test.log = makeLogger(test, { verbose: true });
     clock.stop();
     equal.lists(test.log(), [
       [ 'Test begins.', 'Godspeed!' ],
-      [ 'L:', 'do' ],
-      [ 'R:', 'do' ],
+      [ 'L:', 'do' ], [ 'R:', 'do' ],
       { time_sec: 1 },
-      [ 'Late:', 'do' ],
-      [ 'lateR:', 'do' ],
-      [ 'sub:', 'fa' ],
+      [ 'Late:', 'do' ], [ 'lateR:', 'do' ], [ 'sub:', 'fa' ],
       { time_sec: 2 },
-      [ 'Late:', 'do' ],
-      [ 'lateR:', 'do' ],
-      [ 'sub:', 'fa' ],
+      [ 'Late:', 'do' ], [ 'lateR:', 'do' ], [ 'sub:', 'fa' ],
       { time_sec: 3 },
     ]);
     test.ok();

@@ -18,7 +18,7 @@ from [test.usage.js](test.usage.js):
 
 <!--#include file="test.usage.js" start="  //#u" stop="  //#r"
   outdent="  " code="javascript" -->
-<!--#verbatim lncnt="61" -->
+<!--#verbatim lncnt="54" -->
 ```javascript
 var lateOnce = require('late-once-pmb'), onNext,
   clock = require('event-test-clock-pmb').flavors.quarterSeconds();
@@ -61,22 +61,15 @@ clock.schedule([ 'abs',
 
 test.verify = function () {
   clock.stop();
-
   equal.lists(test.log(), [
     [ 'Test begins.', 'Godspeed!' ],
-    [ 'L:', 'do' ],
-    [ 'R:', 'do' ],
+    [ 'L:', 'do' ], [ 'R:', 'do' ],
     { time_sec: 1 },
-    [ 'Late:', 'do' ],
-    [ 'lateR:', 'do' ],
-    [ 'sub:', 'fa' ],
+    [ 'Late:', 'do' ], [ 'lateR:', 'do' ], [ 'sub:', 'fa' ],
     { time_sec: 2 },
-    [ 'Late:', 'do' ],
-    [ 'lateR:', 'do' ],
-    [ 'sub:', 'fa' ],
+    [ 'Late:', 'do' ], [ 'lateR:', 'do' ], [ 'sub:', 'fa' ],
     { time_sec: 3 },
   ]);
-
   test.ok();
 };
 ```
