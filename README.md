@@ -90,6 +90,14 @@ Known issues
 
 
 
+Related packages
+----------------
+
+* [`future-on-pmb`](https://github.com/mk-pmb/future-on-pmb-js): Pre-subscribe
+  to a potential EventEmitter independent of whether it already exists.
+
+
+
 
 &nbsp;
 
